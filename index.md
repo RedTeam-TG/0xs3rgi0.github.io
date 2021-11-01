@@ -13,6 +13,6 @@ Hey You, Yes You, Welcome To My Cyber Security Blog My Name is Muzec I Posts Dif
 - **My Name:**    `HOGNAGLO komi Sergio`
 - **Known as:**   `0xS3rGio`
 - **What Do I Do:**  `CTF / Red Teaming / Ethical Hacking`
-- **GitHub:**     `https://github.com/Muzec0318`
+- **GitHub:**     `https://github.com/0xS3rgI0`
 
 ## **Latest_Articles**
