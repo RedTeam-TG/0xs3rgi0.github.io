@@ -16,3 +16,5 @@ Hey You, Yes You, Welcome To My Cyber Security Blog My Name is 0xS3rGio I Posts 
 - **GitHub:**     `https://github.com/0xS3rgI0`
 
 ## **Latest_Articles**
+
+- **Nov 1, 2021:** [How to Hide Nginx Version Information](https://0xS3rgI0.github.io/posts/Nginx.html)
