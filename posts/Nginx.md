@@ -34,7 +34,7 @@ To hide the info , edit the `/etc/nginx/nginx.conf` file:
 ```
 sudo vim /etc/nginx/nginx.conf
 ```
-`The server_tokens` module will either enable or disable the nginx version on error pages and in the “Server” response header field.To learn more about The server_tokens module click on (https://nginx.org/en/docs/http/ngx_http_core_module.html#server_tokens)
+`The server_tokens` module will either enable or disable the nginx version on error pages and in the “Server” response header field.
 
 so the next step is to turn it off by adding `server_tokens off`; under the `http` section:
 
