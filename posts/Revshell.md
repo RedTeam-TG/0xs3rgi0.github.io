@@ -4,8 +4,7 @@ title : 0xS3rGio - Reverse Shell The Ultimate Cheat Sheet
 ---
 ### Reverse Shell 
 
-A reverse shell is a kind of shell in which the target machine communicates back to the attacking machine,so during a Penetration Test If You’re Lucky Enough To Find A Command Execution Vulnerability You Will Probably Want An Interactive Shell.
-I include here a reverse shell cheat sheet that contains many reverse shells for different methods or different programming languages like, PHP reverse shell, Netcat reverse shell, Python reverse shell, etc. 
+A reverse shell is a kind of shell in which the target machine communicates back to the attacking machine,so during a Penetration Test If You’re Lucky Enough To Find A Command Execution Vulnerability You Will Probably Want An Interactive Shell.Here I include a reverse shell cheat sheet that contains many reverse shells for different methods or different programming languages like, PHP reverse shell, Netcat reverse shell, Python reverse shell, etc. 
 
 Reverse Shell Cheat Sheet
 
