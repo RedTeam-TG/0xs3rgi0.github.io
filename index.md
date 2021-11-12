@@ -18,3 +18,4 @@ Hey You, Yes You, Welcome To My Cyber Security Blog My Name is 0xS3rGio I Posts 
 ## **Latest_Articles**
 
 - **Nov 9, 2021:** [How to Hide Nginx Version Information](https://0xS3rgI0.github.io/posts/Nginx.html)
+- **Nov 11, 2021:** [Reverse Shell The Ultimate Cheat Sheet](https://0xS3rgI0.github.io/posts/Revshell.html)
