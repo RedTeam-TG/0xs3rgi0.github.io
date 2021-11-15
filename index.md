@@ -14,7 +14,7 @@ Hi,Bienvenue sur mon blog sur la cybersécurité. Je m'appelle 0xS3rGio. Je post
 - **Compétences:**  `CTF / Red Teaming / Ethical Hacking`
 - **GitHub:**     `https://github.com/0xS3rgI0`
 
-## **Latest_Articles**
+## **Mes derniers_articles**
 
 - **Nov 11, 2021:**[Spawner un TTY Shell, l'Ultime Guide](https://0xS3rgI0.github.io/posts/Ttyshells.html)
 - **Nov 9, 2021:** [Comment masquer les informations de version d'un serveur Nginx](https://0xS3rgI0.github.io/posts/Nginx.html)
