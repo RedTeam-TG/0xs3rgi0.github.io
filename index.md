@@ -17,9 +17,9 @@ Hey You, Yes You, Welcome To My Cyber Security Blog My Name is 0xS3rGio I Posts 
 
 ## **Latest_Articles**
 
-- **Nov 11, 2021:**[Spawning A TTY Shell, Cheat Sheets](https://0xS3rgI0.github.io/posts/Ttyshells.html)
-- **Nov 9, 2021:** [How to Hide Nginx Version Information](https://0xS3rgI0.github.io/posts/Nginx.html)
-- **Nov 8, 2021:** [Reverse Shell The Ultimate Cheat Sheet](https://0xS3rgI0.github.io/posts/Revshell.html)
+- **Nov 11, 2021:**[Spawner un TTY Shell, l'Ultime Guide](https://0xS3rgI0.github.io/posts/Ttyshells.html)
+- **Nov 9, 2021:** [Comment masquer les informations de version d'un serveur Nginx](https://0xS3rgI0.github.io/posts/Nginx.html)
+- **Nov 8, 2021:** [Reverse Shell, l'Ultime Guide](https://0xS3rgI0.github.io/posts/Revshell.html)
 
 
 
