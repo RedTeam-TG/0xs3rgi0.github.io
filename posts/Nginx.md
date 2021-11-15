@@ -5,7 +5,7 @@ title : 0xS3rGio - Comment masquer les informations de version d'un serveur Ngin
 
 ### Description
 
-Dans cet article, nous verrons comment masquer les informations de version d'un serveur Nginx contre la technique Banner Grabbing(capture de bannière)
+Dans cet article, nous verrons comment masquer les informations de version d'un serveur Nginx contre la technique du Banner Grabbing(capture de bannière)
 
 ### Le Banner Grabbing
 
