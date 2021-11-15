@@ -1,6 +1,6 @@
 ---
 layout: default
-title : 0xS3rGio - comment masquer les informations de version d'un serveur Nginx
+title : 0xS3rGio - Comment masquer les informations de version d'un serveur Nginx
 ---
 
 ### Description
