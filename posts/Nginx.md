@@ -46,7 +46,7 @@ http {
 	...
 }
 ```
-maintenant Enregistrez et quittez l'éditeur de texte.
+Maintenant Enregistrez et quittez l'éditeur de texte.
 
 Alors passez à l'étape suivante, vérifiez que rien n'a été cassé avec :
 
