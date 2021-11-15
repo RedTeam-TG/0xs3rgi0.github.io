@@ -1,19 +1,20 @@
 ---
 layout: default
-title : 0xS3rGio - How to Hide An Nginx server Version Information
+title : 0xS3rGio - comment masquer les informations de version d'un serveur Nginx
 ---
+
 ### Description
 
-in this article we will see how to hide of an Nginx server version information against banner grabbing technique
+Dans cet article, nous verrons comment masquer les informations de version d'un serveur Nginx contre la technique Banner Grabbing(capture de bannière)
 
-### Banner Grabbing
+### Le Banner Grabbing
 
-`Banner Grabbing` is a technique used to gain information about a computer system on a network and the services running on its open ports.It is often used by system admins to keep track of the different services across their organization(source:`Wikipedia`)
-It's also one of the very techniques that attackers can use to determine if a system can be exploited, however by hiding this information you make life more difficult for them and your server more secure.
+Le`Banner Grabbing` est une technique utilisée pour obtenir des informations sur un système informatique sur un réseau et les services s'exécutant sur ses ports ouverts. Elle est souvent utilisée par les administrateurs système pour suivre les différents services au sein de leur organisation (source :`Wikipedia`).
+C'est également l'une des techniques utiliser par des attaquants pour déterminer si un système est exploitable ou vulnerable.En cachant ces informations, vous leur rendez la vie plus difficile et votre serveur plus sécurisé.
  
- Now let me show you how to do this with an Nginx web server
+ Maintenant, laissez-moi vous montrer comment faire cela avec un serveur Web Nginx
  
- Frist at all,run your own banner grab with:
+ Tout d'abord, lancez votre propre capture de bannière avec :
 
 ```
 $ curl -I example.com
@@ -25,18 +26,18 @@ Content-Length: 162
 Connection: keep-alive
 Location: https://example.com/
 ```
-you see that i have redacted the version number in server information side so this is just an example(can't leak the info this nginx server version lol) i hope you get the idea
+vous voyez que j'ai rédigé le numéro de la version au niveau des informations sur le serveur oui ,ce n'est donc qu'un exemple (je ne peux pas divulguer les informations de cette version du serveur nginx lol) j'espère que vous avez l'idée  
 
-### Hide Nginx Version Information
+### Masquer les informations de version de Nginx
 
-To hide the info , edit the `/etc/nginx/nginx.conf` file:
+Pour masquer les informations, éditez le fichier `/etc/nginx/nginx.conf` :
 
 ```
 sudo vim /etc/nginx/nginx.conf
 ```
-`The server_tokens` module will either enable or disable the nginx version on error pages and in the “Server” response header field.
+`Le module server_tokens` activera ou désactivera la version nginx sur les pages d'erreur et dans le champ d'en-tête de réponse « Server »,pour plus d'info sur le module server_tokens référez vous a google.
 
-so the next step is to turn it off by adding `server_tokens off`; under the `http` section:
+l'étape suivante consiste donc à le désactiver en ajoutant « server_tokens off » ; dans la section `http` :
 
 ```
 http {
@@ -45,15 +46,15 @@ http {
 	...
 }
 ```
-now Save and exit the text editor.
+maintenant Enregistrez et quittez l'éditeur de texte.
 
-So jump on the next step, check that nothinng was broken with:
+Alors passez à l'étape suivante, vérifiez que rien n'a été cassé avec :
 
 ```
 sudo service nginx reload 	# Debian/Ubuntu
 sudo systemctl restart nginx 	# RedHat/Centos
 ```
-Finally, confirm the changes worked:
+Enfin, confirmez les modifications apportées :
 
 ```
 $ curl -I example.com
@@ -65,9 +66,7 @@ Content-Length: 162
 Connection: keep-alive
 Location: https://example.com/
 ```
-Great,you notice now that The server version is no longer present! GooD JoB!
-
-Hope you have learned and enjoyed this article
+Super, vous remarquez maintenant que la version serveur n'est plus présente ! Good job!
 
 <br> <br>
 [Back To Home](../index.md)
