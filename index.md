@@ -5,7 +5,7 @@ title: 0xS3rGio's Cyber Security Blog
 
 ## **Bienvenue sur mon blog sur la cybersécurité**
 
-Hi,Bienvenue sur mon blog sur la cybersécurité. Je m'appelle 0xS3rGio. Je poste différentes astuces de Hacking Ethique,des writeups de CTF's, bref tout ce qui concerne le hacking... Je suis heureux que tu sois là, Merci.
+Hi,Bienvenue sur mon blog sur la cybersécurité. Je m'appelle 0xS3rGio. Je poste différentes astuces de Hacking Ethique,des writeups de CTF's, bref tout ce qui concerne le hacking... Je suis heureux de partager mon Expérience, Merci.
 
 ## WhoAmI:-
 
