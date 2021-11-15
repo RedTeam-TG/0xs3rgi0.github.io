@@ -3,16 +3,15 @@ layout: default
 title: 0xS3rGio's Cyber Security Blog
 ---
 
-## **Welcome To My Cyber Security Blog,  Hacker**
+## **Bienvenue sur mon blog sur la cybersécurité**
 
-Hey You, Yes You, Welcome To My Cyber Security Blog My Name is 0xS3rGio I Posts Different Hacking Tricks, Writeups, Articles, Any Stuffs Related To Hacking... I'm Happy You're Here Mate.
+Hi,Bienvenue sur mon blog sur la cybersécurité. Je m'appelle 0xS3rGio. Je poste différentes astuces de Hacking Ethique,des writeups de CTF's, bref tout ce qui concerne le hacking... Je suis heureux que tu sois là, Merci.
 
 ## WhoAmI:-
 
-
-- **My Name:**    `HOGNAGLO komi Sergio`
-- **Known as:**   `0xS3rGio`
-- **What Do I Do:**  `CTF / Red Teaming / Ethical Hacking`
+- **Mon Nom:**    `HOGNAGLO komi Sergio`
+- **Speudo:**   `0xS3rGio`
+- **Compétences:**  `CTF / Red Teaming / Ethical Hacking`
 - **GitHub:**     `https://github.com/0xS3rgI0`
 
 ## **Latest_Articles**
@@ -23,19 +22,17 @@ Hey You, Yes You, Welcome To My Cyber Security Blog My Name is 0xS3rGio I Posts 
 
 
 
+
+
 ## **PwnTillDawn_Writeups:-**
 
 
 
 
 
-## **HackTheBox_Writeups:-**
 
 
 
-
-
-## **TryHackMe_Writeups:-**
 
 
 
