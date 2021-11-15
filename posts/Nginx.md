@@ -67,7 +67,6 @@ Connection: keep-alive
 Location: https://example.com/
 ```
 Super, vous remarquez maintenant que la version serveur n'est plus présente ! Good job!
-
 <br> <br>
 [Back To Home](../index.md)
 <br>
