@@ -3,7 +3,7 @@ layout: default
 title : 0xS3rGio - Spawning A TTY Shell, Cheat Sheets
 ---
 
-Often during A Pen Tests you may obtain a shell without having tty, yet wish to interact further with the system.Here are some commands which will allow you to spawn a tty shell. 
+Often during A Pen Tests you may obtain A shell without having tty, yet wish to interact further with the System yes lol.Here are some Commands which will allow you to Spawn a TTY Shell. 
 
 Cheat Sheets For Spawning A TTY Shell.
 
