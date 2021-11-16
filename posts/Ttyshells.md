@@ -47,6 +47,8 @@ Within IRB
 
 ```exec "/bin/sh"```
 
+Greeting From [sergio](https://twitter.com/x0Sergi)
+
 <br> <br>
 [Back To Home](../index.md)
 <br>
