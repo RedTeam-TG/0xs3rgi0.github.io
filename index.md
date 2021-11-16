@@ -16,7 +16,7 @@ Hi, Welcome to my Cyber Security blog. My name is 0xS3rGio.I Posts Different Hac
 
 ## **Latest_Articles**
 
-- **Nov 11, 2021:** [Spawning A TTY Shell, The Ultimate Cheat Sheet](https://0xS3rgI0.github.io/posts/Ttyshells.html)
+- **Nov 11, 2021:** [Spawning A TTY Shell, The Ultimate Cheat Sheets](https://0xS3rgI0.github.io/posts/Ttyshells.html)
 - **Nov 8, 2021:** [Reverse Shell,The Ultimate Cheat Sheet](https://0xS3rgI0.github.io/posts/Revshell.html)
 
 
