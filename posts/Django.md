@@ -143,6 +143,17 @@ Boommm! haha we have our first flag which is `FLAG19.txt` cool! Trying to go ahe
 ![Screenshot 2021-11-17 11:49:43](https://user-images.githubusercontent.com/93042298/142226040-dbb277bf-9251-4251-9467-4631bd6ca663.png)
 ![Screenshot 2021-11-17 11:51:54](https://user-images.githubusercontent.com/93042298/142226120-30b7f98e-f7d0-43bb-a7d0-4424edf53a13.png)
 
+lol! checking the `xampp` Directory and we have our second flag `FLAG20.txt` also a `passwords.txt` file containing logins details for Phpmyadmin
+
+![Screenshot 2021-11-17 12:52:07](https://user-images.githubusercontent.com/93042298/142234854-42af1922-9308-4c3b-b7e7-a59d8734ed30.png)
+
+Now let log in Phpmyadmin with the credentials: 
+
+`User: root`
+`Password:thebarrierbetween`
+
+![Screenshot 2021-11-17 13:15:00](https://user-images.githubusercontent.com/93042298/142239047-c733c7c0-58be-47a9-9d73-6f78dc66661a.png)
+
 
 
 
