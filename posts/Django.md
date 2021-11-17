@@ -154,6 +154,26 @@ Now let log in Phpmyadmin with the credentials:
 
 ![Screenshot 2021-11-17 13:15:00](https://user-images.githubusercontent.com/93042298/142239047-c733c7c0-58be-47a9-9d73-6f78dc66661a.png)
 
+Our FLAG 18 gotten now it's great time to find the last FLAG just going back to the FTP server 
+
+![Screenshot 2021-11-17 13:38:09](https://user-images.githubusercontent.com/93042298/142243172-5f47420a-c8a1-4329-aa3b-8cde7824bb93.png)
+
+Good job last flag gotten ,you can Try also another way to get to the last flag yes hehe! just to get a reverse shell back to the terminal so just do it .
+
+Have Fun !!!
+
+Greeting From [Sergio](https://twitter.com/x0sergi)
+<br> <br>
+[Back To Home](../index.md)
+<br>
+
+
+
+
+
+
+
+
 
 
 
