@@ -2,6 +2,9 @@
 layout: default
 title : x0SerGio -Django Writeup
 ---
+
+## **PwnTillDawn Online Battlefield**
+
 PwnTillDawn Online Battlefield is a penetration testing lab created by wizlynx group where participants can test their offensive security skills in a safe and legal environment, but also having fun! The goal is simple, break into as many machines as possible using a succession of weaknesses and vulnerabilities and collect flags to prove the successful exploitation. Each target machine that can be compromised contains at least one “FLAG” (most of the times a file and typically located in the user’s Desktop, or the user’s root directory), which you must retrieve, and submit in the application. The flag is in the majority of the cases in a SHA1 format but not always
 
 ![Django](https://user-images.githubusercontent.com/93042298/142042252-a174da6f-9f29-42f1-becb-3c6f487896ee.png)
@@ -117,3 +120,34 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 163.30 seconds
 
 ```
+The Scan Results reveals that we have open ports on our box obviously FTP, HTTP, SMB and other ports too but I decided to focus on these ports which leads us to Ports Enumeration.
+
+So i decided to check to enumerate the SMB first even if we already have anonymous access to the FTP
+
+![Screenshot 2021-11-17 03:13:30](https://user-images.githubusercontent.com/93042298/142147098-ae0f0ae5-77f7-4a4a-af21-ca118e216715.png)
+
+Nothing Much with the SMB seem like there is no shares. Now let check the port 80 
+
+![Screenshot 2021-11-17 08:49:01](https://user-images.githubusercontent.com/93042298/142195625-80a6f413-34a6-4c04-b224-870c2ccc7455.png)
+
+Nice dashboard with some info on the web server.so far just by doing some polls on the page i have then access the `phpinfo.php` page. nice stuff ! now let's try to check the `phpmyadmin` page
+
+![Screenshot 2021-11-17 11:07:35](https://user-images.githubusercontent.com/93042298/142216188-1d980635-3099-4efe-aca0-1e042a948a4e.png)
+
+Trying default credentials such as (admin , admin),(admin , password) but no luck nothing much lol. so let get a look on the FTP 
+
+![Screenshot 2021-11-17 11:26:08](https://user-images.githubusercontent.com/93042298/142219420-284a6045-948e-4954-b041-e625f0656d0c.png)
+
+Boommm! haha we have our first flag which is `FLAG19.txt` cool! Trying to go ahead with `FTP Directory Traversal` using `ls ../../../` and `cd /..` I was able to see all the directories
+
+![Screenshot 2021-11-17 11:49:43](https://user-images.githubusercontent.com/93042298/142226040-dbb277bf-9251-4251-9467-4631bd6ca663.png)
+![Screenshot 2021-11-17 11:51:54](https://user-images.githubusercontent.com/93042298/142226120-30b7f98e-f7d0-43bb-a7d0-4424edf53a13.png)
+
+
+
+
+
+
+
+
+
