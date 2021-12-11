@@ -106,6 +106,10 @@ We can clearly see that there’s a Metasploit module of this exploit by the nam
 
 We choose module number 13 and set options:
 
+![Screenshot 2021-12-11 05:20:01](https://user-images.githubusercontent.com/93042298/145669847-3ce9fa2f-3b6a-4c3f-a0d4-23be7a38aaa5.png)
 
+after running the exploit a command shell (session 1) will be opened:
+
+![Screenshot 2021-12-11 05:29:19](https://user-images.githubusercontent.com/93042298/145670158-061e1ef7-1b80-43c0-ac88-6a4d1c6a8d46.png)
 
 
