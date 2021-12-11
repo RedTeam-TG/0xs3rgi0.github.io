@@ -100,7 +100,7 @@ Now, we will be using searchsploit in order to find any known exploits that abus
 
 ![Screenshot 2021-12-11 05:01:36](https://user-images.githubusercontent.com/93042298/145669360-d58da88f-6592-47f6-a9a8-661277d1e673.png)
 
-We can clearly see that there’s a Metasploit module of this exploit by the name “Username map script”, so let’s attempt to look for it in msfconsole:
+We can clearly see that there’s a Metasploit module of this exploit by the name `Username map script`,so let’s attempt to look for it in msfconsole:
 
 ![Screenshot 2021-12-11 05:05:21](https://user-images.githubusercontent.com/93042298/145669506-796baf79-6066-4915-a423-2cf86ef254b7.png)
 
@@ -108,8 +108,27 @@ We choose module number 13 and set options:
 
 ![Screenshot 2021-12-11 05:20:01](https://user-images.githubusercontent.com/93042298/145669847-3ce9fa2f-3b6a-4c3f-a0d4-23be7a38aaa5.png)
 
-after running the exploit a command shell (session 1) will be opened:
+after running the exploit a command shell (session 1) will be opened now try to spawn a python shell by typing `shell` luckily it's working as well
 
 ![Screenshot 2021-12-11 05:29:19](https://user-images.githubusercontent.com/93042298/145670158-061e1ef7-1b80-43c0-ac88-6a4d1c6a8d46.png)
+
+![Screenshot 2021-12-11 05:30:36](https://user-images.githubusercontent.com/93042298/145670450-f67c682a-721f-453f-bcce-fd8e657cf1c8.png)
+
+so let find our flags ,let’s first navigate to `/home`, there are 2 directories that worth exploring User and makis by checking it we found the user flag under makis directory
+
+![Screenshot 2021-12-11 05:57:46](https://user-images.githubusercontent.com/93042298/145670929-747a57a9-08ab-4e8e-8a43-0a449872dd46.png)
+
+We will now navigate to `/root` and get the final flag:
+
+![Screenshot 2021-12-11 05:58:43](https://user-images.githubusercontent.com/93042298/145671044-5a39f94c-cc39-419b-a477-861b34da4f66.png)
+
+
+Have Fun !!!
+
+Greeting From [Sergio](https://twitter.com/x0sergi)
+<br> <br>
+[Back To Home](../index.md)
+<br>
+
 
 
