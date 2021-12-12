@@ -3,21 +3,21 @@ layout: default
 title: 0xS3rGio's Cyber Security Blog
 ---
 
-## **Welcome to my Cyber Security blog**
+## **Bienvenue sur mon Cyber Security blog **
 
-Hi, Welcome to my Cyber Security blog. My name is 0xS3rGio.I Posts Different Hacking Tricks, Writeups, Articles, Any Stuffs Related To Hacking...... I'm happy to share my blog with you, Thank you.
+Salut,Bienvenue sur mon Cyber Security blog.Je m'appelle 0xS3rGio.Je publie différentes astuces sur le hacking,des articles,des writeups de CTF's, bref tout ce qui concerne le hacking Ethique ...... Je suis heureux de partager mon blog avec vous, merci.
 
 ## WhoAmI:-
 
-- **My Name:**    `HOGNAGLO komi Sergio`
-- **Known as:**   `0xS3rGio`
-- **What Do I Do:**  `CTF / Red Teaming / Ethical Hacking`
+- **Nom:**    `HOGNAGLO komi Sergio`
+- **Pseudo:**   `0xS3rGio`
+- **compétences:**  `CTF / Red Teaming / Ethical Hacking`
 - **GitHub:**     `https://github.com/0xS3rgI0`
 
-## **Latest_Articles**
+## **Les Derniers_articles**
 
-- **Nov 11, 2021:** [Spawning A TTY Shell, The Ultimate Cheat Sheets](https://0xS3rgI0.github.io/posts/Ttyshells.html)
-- **Nov 8, 2021:** [Reverse Shell,The Ultimate Cheat Sheet](https://0xS3rgI0.github.io/posts/Revshell.html)
+- **Nov 11, 2021:** [Spawning d'un TTY Shell, L'Ultime Cheat Sheets](https://0xS3rgI0.github.io/posts/Ttyshells.html)
+- **Nov 8, 2021:** [Reverse Shell, L'Ultime Cheat Sheet](https://0xS3rgI0.github.io/posts/Revshell.html)
 
 
 
