@@ -9,7 +9,7 @@ PwnTillDawn Online Battlefield est un lab de tests d'intrusion créé par le gro
 
 ![Django](https://user-images.githubusercontent.com/93042298/142042252-a174da6f-9f29-42f1-becb-3c6f487896ee.png)
 
- nous commençons par un scan nmap comme dab!
+ Commençons par un scan nmap comme dab!
  
  ```nmap -sC -sV -oA scan <Target-IP>```
 
@@ -124,14 +124,14 @@ Les résultats du Scan révèlent que nous avons des ports ouverts sur notre mac
 
 ![Screenshot 2021-11-17 03:13:30](https://user-images.githubusercontent.com/93042298/142147098-ae0f0ae5-77f7-4a4a-af21-ca118e216715.png)
 
-aucun partage au niveau du SMB bahh. Maintenant,vérifions le port 80
+Aucun partage au niveau du SMB bahh. Maintenant,vérifions le port 80
 
 ![Screenshot 2021-11-17 08:49:01](https://user-images.githubusercontent.com/93042298/142195625-80a6f413-34a6-4c04-b224-870c2ccc7455.png)
 
- joli dashboard j'ai puis accéder à la page `phpinfo.php` mais nous avons juste quelques informations sur le serveur Web .Maintenant essayons de vérifier la page  
+ Joli dashboard j'ai puis accéder à la page `phpinfo.php` mais nous avons juste quelques informations sur le serveur Web .Maintenant essayons de vérifier la page  
 ![Screenshot 2021-11-17 11:07:35](https://user-images.githubusercontent.com/93042298/142216188-1d980635-3099-4efe-aca0-1e042a948a4e.png)
 
- J'ai essayé de me loger avec les informations d'identification par défaut mais pas de chance.un retour sur le FTP Serais cool 
+ J'ai essayé de me connecter avec les informations d'identification par défaut mais pas de chance.Faisons un retour sur le serveur FTP  
 
 ![Screenshot 2021-11-17 11:26:08](https://user-images.githubusercontent.com/93042298/142219420-284a6045-948e-4954-b041-e625f0656d0c.png)
 
