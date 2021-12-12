@@ -5,11 +5,11 @@ title : x0SerGio -Django Writeup
 
 ## **PwnTillDawn Online Battlefield**
 
-PwnTillDawn Online Battlefield is a penetration testing lab created by wizlynx group where participants can test their offensive security skills in a safe and legal environment, but also having fun! The goal is simple, break into as many machines as possible using a succession of weaknesses and vulnerabilities and collect flags to prove the successful exploitation. Each target machine that can be compromised contains at least one “FLAG” (most of the times a file and typically located in the user’s Desktop, or the user’s root directory), which you must retrieve, and submit in the application. The flag is in the majority of the cases in a SHA1 format but not always
+PwnTillDawn Online Battlefield est un lab de tests d'intrusion créé par le groupe wizlynx où les participants peuvent tester leurs compétences en sécurité offensive dans un environnement sûr et légal, mais aussi en s'amusant ! Le but est simple, s'introduire dans autant de machines que possible en utilisant une succession de faiblesses et de vulnérabilités et collecter des flags pour prouver la réussite de l'exploitation. Chaque machine cible qui peut être compromise contient au moins un « FLAG » (la plupart du temps un fichier et généralement situé sur le bureau de l'utilisateur ou dans le répertoire racine de l'utilisateur), que vous devez récupérer et soumettre dans l'application. Le flag est dans la majorité des cas au format SHA1 mais pas toujours
 
 ![Django](https://user-images.githubusercontent.com/93042298/142042252-a174da6f-9f29-42f1-becb-3c6f487896ee.png)
 
- frist time  we start with a nmap scan 
+ nous commençons par un scan nmap comme dab!
  
  ```nmap -sC -sV -oA scan <Target-IP>```
 
@@ -120,45 +120,42 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 163.30 seconds
 
 ```
-The Scan Results reveals that we have open ports on our box obviously FTP, HTTP, SMB and other ports too but I decided to focus on these ports which leads us to Ports Enumeration.
-
-So i decided to check to enumerate the SMB first even if we already have anonymous access to the FTP
+Les résultats du Scan révèlent que nous avons des ports ouverts sur notre machine , évidemment  FTP, HTTP, SMB et d'autres ports aussi.J'ai donc décidé d énumérer le SMB en premier même si nous avons déjà un accès anonyme au FTP 
 
 ![Screenshot 2021-11-17 03:13:30](https://user-images.githubusercontent.com/93042298/142147098-ae0f0ae5-77f7-4a4a-af21-ca118e216715.png)
 
-Nothing Much with the SMB seem like there is no shares. Now let check the port 80 
+aucun partage au niveau du SMB bahh. Maintenant,vérifions le port 80
 
 ![Screenshot 2021-11-17 08:49:01](https://user-images.githubusercontent.com/93042298/142195625-80a6f413-34a6-4c04-b224-870c2ccc7455.png)
 
-Nice dashboard with some info on the web server.so far just by doing some polls on the page i have then access the `phpinfo.php` page. nice stuff ! now let's try to check the `phpmyadmin` page
-
+ joli dashboard j'ai puis accéder à la page `phpinfo.php` mais nous avons juste quelques informations sur le serveur Web .Maintenant essayons de vérifier la page  
 ![Screenshot 2021-11-17 11:07:35](https://user-images.githubusercontent.com/93042298/142216188-1d980635-3099-4efe-aca0-1e042a948a4e.png)
 
-Trying default credentials such as (admin , admin),(admin , password) but no luck nothing much lol. so let get a look on the FTP 
+ J'ai essayé de me loger avec les informations d'identification par défaut mais pas de chance.un retour sur le FTP Serais cool 
 
 ![Screenshot 2021-11-17 11:26:08](https://user-images.githubusercontent.com/93042298/142219420-284a6045-948e-4954-b041-e625f0656d0c.png)
 
-Boommm! haha we have our first flag which is `FLAG19.txt` cool! Trying to go ahead with `FTP Directory Traversal` using `ls ../../../` and `cd /..` I was able to see all the directories
+Boummm ! haha nous avons notre premier flag qui est `FLAG19.txt` cool ! En essayant d'aller plus loin avec `FTP Directory Traversal`(`ls ../../../` et `cd /..`) j'ai pu voir tous les répertoires  
 
 ![Screenshot 2021-11-17 11:49:43](https://user-images.githubusercontent.com/93042298/142226040-dbb277bf-9251-4251-9467-4631bd6ca663.png)
 ![Screenshot 2021-11-17 11:51:54](https://user-images.githubusercontent.com/93042298/142226120-30b7f98e-f7d0-43bb-a7d0-4424edf53a13.png)
 
-lol! checking the `xampp` Directory and we have our second flag `FLAG20.txt` also a `passwords.txt` file containing logins details for Phpmyadmin
+MDR! en vérifiant le répertoire `xampp` et nous avons notre deuxième flag `FLAG20.txt` et également un fichier `passwords.txt` contenant les détails d'identification pour Phpmyadmin
 
 ![Screenshot 2021-11-17 12:52:07](https://user-images.githubusercontent.com/93042298/142234854-42af1922-9308-4c3b-b7e7-a59d8734ed30.png)
 
-Now let log in Phpmyadmin with the credentials: 
+Maintenant, connectez-nous à Phpmyadmin avec les informations d'identification :
 
 `User: root`
 `Password:thebarrierbetween`
 
 ![Screenshot 2021-11-17 13:15:00](https://user-images.githubusercontent.com/93042298/142239047-c733c7c0-58be-47a9-9d73-6f78dc66661a.png)
 
-Our FLAG 18 gotten now it's great time to find the last FLAG just going back to the FTP server 
+Notre FLAG 18 obtenu .Trouvons maintemant  le dernier FLAG juste en revenant sur le serveur FTP
 
 ![Screenshot 2021-11-17 13:38:09](https://user-images.githubusercontent.com/93042298/142243172-5f47420a-c8a1-4329-aa3b-8cde7824bb93.png)
 
-Good job last flag gotten ,you can Try also another way to get to the last flag yes hehe! just to get a reverse shell back to the terminal so just do it .
+Good job ! dernier flag obtenu, vous pouvez essayer aussi un autre moyen pour otbenir le dernier flag via un shell reverse au terminal.xD
 
 Have Fun !!!
 
