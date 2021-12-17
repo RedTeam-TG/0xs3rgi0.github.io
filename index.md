@@ -16,7 +16,6 @@ Salut,Bienvenue sur mon Cyber Security blog.Je m'appelle 0xS3rGio.Je publie diff
 
 ## **Les Derniers_articles**
 
-- **Nov 11, 2021:** [Spawning d'un TTY Shell, L'Ultime Cheat Sheets](https://0xS3rgI0.github.io/posts/Ttyshells.html)
 - **Nov 8, 2021:** [Reverse Shell, L'Ultime Cheat Sheet](https://0xS3rgI0.github.io/posts/Revshell.html)
 
 
