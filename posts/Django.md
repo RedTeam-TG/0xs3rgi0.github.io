@@ -3,11 +3,7 @@ layout: default
 title : x0SerGio -Django Writeup
 ---
 
-## **PwnTillDawn Online Battlefield**
-
-PwnTillDawn Online Battlefield est un lab de tests d'intrusion créé par le groupe wizlynx où les participants peuvent tester leurs compétences en sécurité offensive dans un environnement sûr et légal, mais aussi en s'amusant ! Le but est simple, s'introduire dans autant de machines que possible en utilisant une succession de faiblesses et de vulnérabilités et collecter des flags pour prouver la réussite de l'exploitation. Chaque machine cible qui peut être compromise contient au moins un « FLAG » (la plupart du temps un fichier et généralement situé sur le bureau de l'utilisateur ou dans le répertoire racine de l'utilisateur), que vous devez récupérer et soumettre dans l'application. Le flag est dans la majorité des cas au format SHA1 mais pas toujours
-
-![Django](https://user-images.githubusercontent.com/93042298/142042252-a174da6f-9f29-42f1-becb-3c6f487896ee.png)
+## **PwnTillDawn Django**
 
  Commençons par un scan nmap comme dab!
  
@@ -120,46 +116,47 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 163.30 seconds
 
 ```
-Les résultats du Scan révèlent que nous avons des ports ouverts sur notre machine , évidemment  FTP, HTTP, SMB et d'autres ports aussi.J'ai donc décidé d énumérer le SMB en premier même si nous avons déjà un accès anonyme au FTP 
-
+ Nous avons des ports ouverts sur notre machine mainte  
+ 
 ![Screenshot 2021-11-17 03:13:30](https://user-images.githubusercontent.com/93042298/142147098-ae0f0ae5-77f7-4a4a-af21-ca118e216715.png)
 
-Aucun partage au niveau du SMB bahh. Maintenant,vérifions le port 80
+Rien d'interessant, il y aucun partage au niveau du SMB du coup il va faloir Maintenant vérifer le port 80
 
 ![Screenshot 2021-11-17 08:49:01](https://user-images.githubusercontent.com/93042298/142195625-80a6f413-34a6-4c04-b224-870c2ccc7455.png)
 
- Joli dashboard j'ai puis accéder à la page `phpinfo.php` mais nous avons juste quelques informations sur le serveur Web .Maintenant essayons de vérifier la page  
+ L' access à la page `phpinfo.php` nous presentent juste les infos sur le serveur Web . Essayons de verifier la page 
+
 ![Screenshot 2021-11-17 11:07:35](https://user-images.githubusercontent.com/93042298/142216188-1d980635-3099-4efe-aca0-1e042a948a4e.png)
 
- J'ai essayé de me connecter avec les informations d'identification par défaut mais pas de chance.Faisons un retour sur le serveur FTP  
+ les tentatives de connection  avec les informations d'identification par défauts ont echoues, pas chance .reveneons sur notre fameux le serveur FTP 
 
 ![Screenshot 2021-11-17 11:26:08](https://user-images.githubusercontent.com/93042298/142219420-284a6045-948e-4954-b041-e625f0656d0c.png)
 
-Boummm ! haha nous avons notre premier flag qui est `FLAG19.txt` cool ! En essayant d'aller plus loin avec `FTP Directory Traversal`(`ls ../../../` et `cd /..`) j'ai pu voir tous les répertoires  
+Boummm ! haha la premiere Flag `FLAG19.txt` obtenu. En faisant du  `FTP Directory Traversal`(`ls ../../../` et `cd /..`), nous tous les répertoires disponible  
 
 ![Screenshot 2021-11-17 11:49:43](https://user-images.githubusercontent.com/93042298/142226040-dbb277bf-9251-4251-9467-4631bd6ca663.png)
 ![Screenshot 2021-11-17 11:51:54](https://user-images.githubusercontent.com/93042298/142226120-30b7f98e-f7d0-43bb-a7d0-4424edf53a13.png)
 
-MDR! en vérifiant le répertoire `xampp` et nous avons notre deuxième flag `FLAG20.txt` et également un fichier `passwords.txt` contenant les détails d'identification pour Phpmyadmin
+ En vérifiant le répertoire `xampp` , le second flag `FLAG20.txt` est obtenu en compagnie d'un fichier `passwords.txt` contenant les détails d'identification pour Phpmyadmin
 
 ![Screenshot 2021-11-17 12:52:07](https://user-images.githubusercontent.com/93042298/142234854-42af1922-9308-4c3b-b7e7-a59d8734ed30.png)
 
-Maintenant, connectez-nous à Phpmyadmin avec les informations d'identification :
+Connectons-nous à Phpmyadmin avec les informations d'identification :
 
 `User: root`
 `Password:thebarrierbetween`
 
 ![Screenshot 2021-11-17 13:15:00](https://user-images.githubusercontent.com/93042298/142239047-c733c7c0-58be-47a9-9d73-6f78dc66661a.png)
 
-Notre FLAG 18 obtenu .Trouvons maintemant  le dernier FLAG juste en revenant sur le serveur FTP
+ FLAG 18 obtenu .Trouvons le dernier FLAG en faisant un  retour  sur le serveur FTP
 
 ![Screenshot 2021-11-17 13:38:09](https://user-images.githubusercontent.com/93042298/142243172-5f47420a-c8a1-4329-aa3b-8cde7824bb93.png)
 
-Good job ! dernier flag obtenu, vous pouvez essayer aussi un autre moyen pour otbenir le dernier flag via un shell reverse au terminal.xD
+Cool ! dernier flag obtenu avec sucess oups 
 
 Have Fun !!!
 
-Greeting From [Sergio](https://twitter.com/x0sergi)
+CC [Sergio](https://twitter.com/x0sergi)
 <br> <br>
 [Back To Home](../index.md)
 <br>
