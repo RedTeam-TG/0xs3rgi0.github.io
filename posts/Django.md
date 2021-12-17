@@ -5,7 +5,9 @@ title : x0SerGio -Django Writeup
 
 ## **PwnTillDawn Django**
 
- Commençons par un scan nmap comme dab!
+`Recon`
+
+Commenceons par un nmap Scan
  
  ```nmap -sC -sV -oA scan <Target-IP>```
 
@@ -116,7 +118,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 163.30 seconds
 
 ```
- Nous avons des ports ouverts sur notre machine mainte  
+ Nous avons les ports ouverts sur notre machine evidemment les ports FTP;HTTP;SMB .jeteons un oeil d'oeil au SMB en premier lieu 
  
 ![Screenshot 2021-11-17 03:13:30](https://user-images.githubusercontent.com/93042298/142147098-ae0f0ae5-77f7-4a4a-af21-ca118e216715.png)
 
@@ -124,36 +126,36 @@ Rien d'interessant, il y aucun partage au niveau du SMB du coup il va faloir Mai
 
 ![Screenshot 2021-11-17 08:49:01](https://user-images.githubusercontent.com/93042298/142195625-80a6f413-34a6-4c04-b224-870c2ccc7455.png)
 
- L' access à la page `phpinfo.php` nous presentent juste les infos sur le serveur Web . Essayons de verifier la page 
+COOL! L' access à la page `phpinfo.php` nous presentent  les infos sur le serveur Web. Essayons de verifier notre page 
 
 ![Screenshot 2021-11-17 11:07:35](https://user-images.githubusercontent.com/93042298/142216188-1d980635-3099-4efe-aca0-1e042a948a4e.png)
 
- les tentatives de connection  avec les informations d'identification par défauts ont echoues, pas chance .reveneons sur notre fameux le serveur FTP 
+ Mes tentatives de connection  avec les informations d'identification par défauts ont echoues, pas de chance lol.reveneons sur notre fameux le serveur FTP 
 
 ![Screenshot 2021-11-17 11:26:08](https://user-images.githubusercontent.com/93042298/142219420-284a6045-948e-4954-b041-e625f0656d0c.png)
 
-Boummm ! haha la premiere Flag `FLAG19.txt` obtenu. En faisant du  `FTP Directory Traversal`(`ls ../../../` et `cd /..`), nous tous les répertoires disponible  
+Boummm ! haha notre premier Flag `FLAG19.txt` obtenu. En faisant du  `FTP Directory Traversal` (`ls ../../../` et `cd /..`) , nous pouvons voir tous les répertoires disponible  
 
 ![Screenshot 2021-11-17 11:49:43](https://user-images.githubusercontent.com/93042298/142226040-dbb277bf-9251-4251-9467-4631bd6ca663.png)
 ![Screenshot 2021-11-17 11:51:54](https://user-images.githubusercontent.com/93042298/142226120-30b7f98e-f7d0-43bb-a7d0-4424edf53a13.png)
 
- En vérifiant le répertoire `xampp` , le second flag `FLAG20.txt` est obtenu en compagnie d'un fichier `passwords.txt` contenant les détails d'identification pour Phpmyadmin
+ En vérifiant le répertoire `xampp` , notre second flag `FLAG20.txt` est obtenu en compagnie d'un fichier `passwords.txt`qui contient justement les détails d'identification pour Phpmyadmin
 
 ![Screenshot 2021-11-17 12:52:07](https://user-images.githubusercontent.com/93042298/142234854-42af1922-9308-4c3b-b7e7-a59d8734ed30.png)
 
-Connectons-nous à Phpmyadmin avec les informations d'identification :
+Maitemant ,Connectons-nous à Phpmyadmin avec les informations d'identification :
 
 `User: root`
 `Password:thebarrierbetween`
 
 ![Screenshot 2021-11-17 13:15:00](https://user-images.githubusercontent.com/93042298/142239047-c733c7c0-58be-47a9-9d73-6f78dc66661a.png)
 
- FLAG 18 obtenu .Trouvons le dernier FLAG en faisant un  retour  sur le serveur FTP
+ le FLAG 18 obtenu avec sucess juste apres notre connection cool ,Maintemant Trouvons le dernier FLAG en faisant un retour sur le serveur FTP qui pourrais nous aidez
 
 ![Screenshot 2021-11-17 13:38:09](https://user-images.githubusercontent.com/93042298/142243172-5f47420a-c8a1-4329-aa3b-8cde7824bb93.png)
 
-Cool ! dernier flag obtenu avec sucess oups 
-
+Cool ! notre dernier flag obtenu avec sucess oups tres cool nous avons obtenu tous les flags haha.xD
+ 
 Have Fun !!!
 
 CC [Sergio](https://twitter.com/x0sergi)
