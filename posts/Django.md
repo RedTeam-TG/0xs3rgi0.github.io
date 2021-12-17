@@ -5,9 +5,9 @@ title : x0SerGio -Django Writeup
 
 ## **PwnTillDawn Django**
 
-`Recon`
+ `RECON`:
 
-Commenceons par un nmap Scan
+ `Nmap Scan`
  
  ```nmap -sC -sV -oA scan <Target-IP>```
 
@@ -118,7 +118,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 163.30 seconds
 
 ```
- Nous avons les ports ouverts sur notre machine evidemment les ports FTP;HTTP;SMB .jeteons un oeil d'oeil au SMB en premier lieu 
+ Nous avons Des ports ouverts sur notre machine evidemment les ports FTP ; HTTP ;SMB .Nous allons avancez avec  le SMB en premier. 
  
 ![Screenshot 2021-11-17 03:13:30](https://user-images.githubusercontent.com/93042298/142147098-ae0f0ae5-77f7-4a4a-af21-ca118e216715.png)
 
