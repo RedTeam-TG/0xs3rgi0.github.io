@@ -2,7 +2,7 @@ title: 0xS3rGio's Cyber Security Blog
 #description: 0xS3rGio's Cyber Security Blog
 show_downloads: false
 show_repo: false
-theme: jekyll-theme-slate
+theme: jekyll-theme-time-machine
 
 gems:
   - jekyll-sitemap
