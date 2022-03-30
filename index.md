@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 0xS3rGio's Cyber Security Blog
+title: Home
 ---
 
 ## **Bienvenue sur mon Cyber Security blog**
