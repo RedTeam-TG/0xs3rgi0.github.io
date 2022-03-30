@@ -24,8 +24,7 @@ Salut,Bienvenue sur mon Cyber Security blog.Je m'appelle 0xS3rGio.Je publie diff
 
 -**Nov 17, 2021:** [PwnTillDawn -- Django](https://0xS3rgI0.github.io/posts/Django.html) *Windows Box*
 
--**Dec 23, 2021:** [PwnTillDawn -- Morty](https://0xS3rgI0.github.io/posts/Morty.html) 
-
+ 
 
 ## **HackTheBox_Writeups:-**
 
