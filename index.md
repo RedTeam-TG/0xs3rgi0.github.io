@@ -24,15 +24,15 @@ Salut,Bienvenue sur mon Cyber Security blog.Je m'appelle 0xS3rGio.Je publie diff
 
 ## **PwnTillDawn_Writeups:-**
 
--**Nov 17, 2021:** [PwnTillDawn -- Django](https://0xS3rgI0.github.io/posts/Django.html) *Windows Box*
+-**Nov 17, 2021:** [PwnTillDawn -- Django](https://0xS3rgI0.github.io/posts/Django.html) *Windows Machine*
 
  
 
 ## **HackTheBox_Writeups:-**
 
--**Dec 12, 2021:**  [HackTheBox --Lame](https://0xS3rgI0.github.io/posts/Lame.html) *linux Box*
+-**Dec 12, 2021:**  [HackTheBox --Lame](https://0xS3rgI0.github.io/posts/Lame.html) *linux Machine*
 
--**Dec 23, 2021:**  [HackTheBox --Blue](https://0xS3rgI0.github.io/posts/Blue.html) *windows Box*
+-**Dec 23, 2021:**  [HackTheBox --Blue](https://0xS3rgI0.github.io/posts/Blue.html) *windows Machine*
 
 
 
